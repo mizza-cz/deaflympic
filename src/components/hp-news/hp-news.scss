@@ -1,0 +1,32 @@
+.hp-news {
+  padding: 64px 0;
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 40px;
+  }
+  &__inner {
+  }
+}
+
+.newsItem {
+  &__date {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--color-red-600);
+    margin-bottom: 8px;
+  }
+  &__title {
+    color: var(--color-gray-900);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 8px;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    display: block;
+    color: var(--color-gray-600);
+  }
+}
