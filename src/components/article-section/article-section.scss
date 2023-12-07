@@ -2,11 +2,9 @@
   padding-top: 64px;
   padding-bottom: 96px;
   @include media-breakpoint-down(lg) {
-    padding-bottom: 60px;
+    padding-bottom: 40px;
   }
-  @include media-breakpoint-down(md) {
-    padding-top: 40px;
-  }
+
   &__img {
     width: 100%;
     aspect-ratio: 1216/640;
@@ -88,9 +86,7 @@
   margin-top: 48px;
   flex-wrap: wrap;
   gap: 24px;
-  @include media-breakpoint-down(lg) {
-    margin-top: 40px;
-  }
+
   @include media-breakpoint-down(md) {
     flex-direction: column;
     justify-content: center;

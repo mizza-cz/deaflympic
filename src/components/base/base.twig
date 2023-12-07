@@ -11,9 +11,12 @@
 
     <!--****** Favicon ******-->
     <!--****** Fonts ******-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <!--****** Styles  ******-->
     <link rel="preload" href="css/styles.css" as="style" />
     <link rel="stylesheet" media="screen, handheld" href="css/styles.css" />
@@ -35,11 +38,21 @@
     />
     <link rel="preload" href="js/scripts.js" as="script" />
     <!-- ****** scripts ****** -->
-    
   </head>
   <body>
     <div class="base">
-      {% include "@components/header/header.twig" %}
+      {% if title == "02.0_article" %}
+       {% include
+      "@components/header/headerShadow.twig" %}
+
+      {% elseif title == "03.0_archive" %}
+      {% include "@components/header/headerShadow.twig" %}
+
+      {% elseif title == "04.0_archive-news" %}
+      {% include "@components/header/headerShadow.twig" %}
+      
+      {% else %} {% include
+      "@components/header/header.twig" %} {% endif %}
       <main class="main" aria-label="Hlavní obsah">
         {% block main %}{% endblock %}
       </main>

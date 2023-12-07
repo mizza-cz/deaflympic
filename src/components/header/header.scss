@@ -108,9 +108,10 @@
     color: var(--color-red-600);
   }
 }
-
-.navbar {
+.headerShadow .navbar {
   box-shadow: 0px 20px 24px -4px #10182814;
+}
+.navbar {
   position: relative;
   @include media-breakpoint-only(lg) {
     flex-wrap: wrap;
@@ -323,10 +324,7 @@
     display: none;
   }
 }
-.is-nav-open .header {
-  overflow: auto;
-  height: 100vh;
-}
+
 .dropdown-menu[data-bs-popper] {
   top: 100%;
 }

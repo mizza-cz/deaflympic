@@ -1,0 +1,13 @@
+.archive-section {
+  padding-top: 64px;
+  @include media-breakpoint-down(md) {
+    padding-top: 40px;
+  }
+  .newsItem,
+  .post {
+    margin-bottom: 12px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 0;
+    }
+  }
+}
