@@ -1,0 +1,111 @@
+<section class="archive-section">
+  <div class="container">
+    <div class="headerSection">
+      <h1 class="h1">Fotogalerie</h1>
+      <form class="search">
+        <button>
+          <img src="images/ico/search.svg" alt="" />
+        </button>
+        <input type="text" placeholder="Hledat" />
+      </form>
+    </div>
+    <div class="filtrSection">
+      <ul class="filtrSection__categories">
+        <li>
+          <a href="#" class="active">Vše</a>
+        </li>
+        <li>
+          <a href="">Kategorie</a>
+        </li>
+        <li>
+          <a href="">Kategorie</a>
+        </li>
+        <li>
+          <a href="">Kategorie</a>
+        </li>
+        <li>
+          <a href="">Kategorie</a>
+        </li>
+      </ul>
+      <select class="js-select" name="" id="">
+        <option value="">Všechny měsíce</option>
+        <option>Měsíc</option>
+        <option>leden</option>
+        <option>únor</option>
+        <option>březen</option>
+        <option>duben</option>
+        <option>květen</option>
+        <option>červen</option>
+        <option>červenec</option>
+        <option>srpen</option>
+        <option>září</option>
+        <option>říjen</option>
+        <option>listopad</option>
+        <option>prosinec</option>
+      </select>
+    </div>
+    <div class="row g-8 mb-8">
+      <div class="col-lg-4 col-md-6">
+        {% include "@components/post/post-2.twig" %}
+      </div>
+      <div class="col-lg-4 col-md-6">
+        {% include "@components/post/post-2.twig" %}
+      </div>
+      <div class="col-lg-4 col-md-6">
+        {% include "@components/post/post-2.twig" %}
+      </div>
+      <div class="col-lg-4 col-md-6">
+        {% include "@components/post/post-2.twig" %}
+      </div>
+      <div class="col-lg-4 col-md-6">
+        {% include "@components/post/post-2.twig" %}
+      </div>
+      <div class="col-lg-4 col-md-6">
+        {% include "@components/post/post-2.twig" %}
+      </div>
+      <div class="col-lg-4 col-md-6">
+        {% include "@components/post/post-2.twig" %}
+      </div>
+      <div class="col-lg-4 col-md-6">
+        {% include "@components/post/post-2.twig" %}
+      </div>
+    </div>
+    <nav aria-label="Další stránky">
+      <ul
+        class="pagination d-flex flex-wrap pagination-flat pagination-success"
+      >
+        <li class="page-item page-item__prev">
+          <a data-abc="true" href="#" class="page-link">
+            {% include "@images/arrow-1.svg" %} Předchozí
+          </a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="#" data-abc="true">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" data-abc="true">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" data-abc="true">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" data-abc="true">...</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" data-abc="true">8</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" data-abc="true">9</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" data-abc="true">10</a>
+        </li>
+        <li class="page-item page-item__next">
+          <a class="page-link" href="#" data-abc="true">
+            Další {% include "@images/arrow-2.svg" %}
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
