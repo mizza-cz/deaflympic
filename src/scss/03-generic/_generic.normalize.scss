@@ -35,12 +35,10 @@ ol[role="list"] {
 html {
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
 
 /* Set core body defaults */
 body {

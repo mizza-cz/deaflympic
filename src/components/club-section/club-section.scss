@@ -1,0 +1,50 @@
+.club-section {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 40px;
+  }
+
+  &__menu {
+    width: fit-content;
+    margin: 0 auto 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--color-gray-200);
+    li + li {
+      border-left: 1px solid var(--color-gray-200);
+    }
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      color: var(--color-gray-700);
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+      &:hover {
+        background-color: var(--color-gray-100);
+      }
+    }
+  }
+}
+
+#players {
+  .name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      display: inline-block;
+    }
+  }
+}

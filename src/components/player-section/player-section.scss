@@ -1,0 +1,77 @@
+.player-section {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 40px;
+  }
+  &__medals {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+    justify-content: center;
+    li {
+      height: 77px;
+      width: 107px;
+      border-radius: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-light);
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      span {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+      }
+    }
+    &-gold {
+      background-color: #d7ae36;
+    }
+    &-silver {
+      background-color: #d7d7d7;
+      color: var(--color-gray-950) !important;
+    }
+    &-bronze {
+      background-color: #a67044;
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 24px;
+    margin-bottom: 32px;
+    @include media-breakpoint-down(lg) {
+      justify-content: space-around;
+    }
+    li {
+      min-width: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-gray-600);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      @include media-breakpoint-down(lg) {
+        min-width: auto;
+      }
+    }
+    span {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 18px;
+    }
+  }
+}
