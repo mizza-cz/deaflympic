@@ -2,6 +2,7 @@
   padding: 64px 0;
   @include media-breakpoint-down(lg) {
     padding-bottom: 40px;
+    padding-top: 32px;
   }
   &__inner {
   }
