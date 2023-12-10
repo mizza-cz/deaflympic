@@ -22,7 +22,7 @@
     <link rel="stylesheet" media="screen, handheld" href="css/styles.css" />
     <link rel="stylesheet" media="print" href="css/prints.css" />
     <!--****** Styles  ******-->
-
+    <script src="https://www.youtube.com/iframe_api"></script>
     <!--****** Scripts  ******-->
     <link
       rel="preload"
@@ -41,28 +41,9 @@
   </head>
   <body>
     <div class="base">
-      {% if title == "02.0_article" %}
-       {% include
-      "@components/header/headerShadow.twig" %}
-
-      {% elseif title == "03.0_archive" %}
-      {% include "@components/header/headerShadow.twig" %}
-
-      {% elseif title == "04.0_archive-news" %}
-      {% include "@components/header/headerShadow.twig" %}
-
-      {% elseif title == "05.0_gallery" %}
-      {% include "@components/header/headerShadow.twig" %}
-      
-      {% elseif title == "06.0_partners" %}
-      {% include "@components/header/headerShadow.twig" %}
-      
-      {% elseif title == "07.0_player" %}
-      {% include "@components/header/headerShadow.twig" %}
-      
-
-      {% else %} {% include
-      "@components/header/header.twig" %} {% endif %}
+      {% if title == "01.0_homepage" %} {% include
+      "@components/header/header.twig" %} {% else %} {% include
+      "@components/header/headerShadow.twig" %} {% endif %}
       <main class="main" aria-label="Hlavní obsah">
         {% block main %}{% endblock %}
       </main>

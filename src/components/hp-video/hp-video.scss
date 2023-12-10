@@ -1,0 +1,81 @@
+.hp-video {
+  margin-bottom: 80px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 40px;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 48px;
+  }
+  &__img {
+    margin-bottom: 24px;
+    width: 100%;
+    aspect-ratio: 280/296;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 80px;
+      height: 80px;
+      background-image: url("../images/ico/play.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0 auto;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__item {
+    p {
+      display: block;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+      color: var(--color-gray-900);
+    }
+  }
+}
+
+.videoModal {
+  .modal-dialog {
+    max-width: 800px !important;
+    margin: 30px auto;
+    top: 50%;
+    transform: translateY(-50%) !important;
+  }
+  .modal-content {
+    width: 100%;
+  }
+  .modal-body {
+    position: relative;
+    padding: 0px;
+    width: 100%;
+    iframe {
+      width: 100%;
+      height: auto;
+      display: block;
+      aspect-ratio: 1000/600;
+    }
+  }
+  .close {
+    position: absolute;
+    right: -30px;
+    top: 0;
+    z-index: 999;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #fff;
+    opacity: 1;
+  }
+}

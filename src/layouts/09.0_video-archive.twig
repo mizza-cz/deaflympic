@@ -1,0 +1,223 @@
+{% extends "@components/base/base.twig" %} {% set title = "09.0_video-archive"
+%} {% block main %}
+<section class="archive-section">
+  <div class="container">
+    <div class="headerSection">
+      <h1 class="h1">Archiv video</h1>
+      <form class="search">
+        <button>
+          <img src="images/ico/search.svg" alt="" />
+        </button>
+        <input type="text" placeholder="Hledat" />
+      </form>
+    </div>
+    <div class="row g-8 mb-8">
+      <div class="col-lg-3 col-sm-6">
+        <div
+          onclick="changeVideo('FXz8wfvl7B4?si=lrUDF-w0rR-G7Bpw')"
+          class="hp-video__item"
+        >
+          <div class="hp-video__img">
+            <img src="images/content/topstory.png" loading="lazy" alt="" />
+          </div>
+          <p>Procházka dokázal zvítězit v největším závodě letošního roku.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div
+          onclick="changeVideo('FFdHkN9FGPU?si=X7-WYjoSO8lCyNrr')"
+          class="hp-video__item"
+        >
+          <div class="hp-video__img">
+            <img src="images/content/topstory.png" loading="lazy" alt="" />
+          </div>
+          <p>Olympionici budou nosit novou značku oblečení</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div
+          onclick="changeVideo('eAqMXP-9Fxc?si=F2NBQgckymVxuIva')"
+          class="hp-video__item"
+        >
+          <div class="hp-video__img">
+            <img src="images/content/photo-2.png" loading="lazy" alt="" />
+          </div>
+          <p>Rekord na 100m dokázala zdolat česká sportovkyně</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div
+          onclick="changeVideo('FXz8wfvl7B4?si=lrUDF-w0rR-G7Bpw')"
+          class="hp-video__item"
+        >
+          <div class="hp-video__img">
+            <img src="images/content/photo-3.png" loading="lazy" alt="" />
+          </div>
+          <p>Jak nejlépe cvičit a zhubnout do plavek?</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div
+          onclick="changeVideo('eAqMXP-9Fxc?si=F2NBQgckymVxuIva')"
+          class="hp-video__item"
+        >
+          <div class="hp-video__img">
+            <img src="images/content/photo-2.png" loading="lazy" alt="" />
+          </div>
+          <p>Rekord na 100m dokázala zdolat česká sportovkyně</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div
+          onclick="changeVideo('FXz8wfvl7B4?si=lrUDF-w0rR-G7Bpw')"
+          class="hp-video__item"
+        >
+          <div class="hp-video__img">
+            <img src="images/content/photo-3.png" loading="lazy" alt="" />
+          </div>
+          <p>Jak nejlépe cvičit a zhubnout do plavek?</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div
+          onclick="changeVideo('eAqMXP-9Fxc?si=F2NBQgckymVxuIva')"
+          class="hp-video__item"
+        >
+          <div class="hp-video__img">
+            <img src="images/content/photo-2.png" loading="lazy" alt="" />
+          </div>
+          <p>Rekord na 100m dokázala zdolat česká sportovkyně</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div
+          onclick="changeVideo('FXz8wfvl7B4?si=lrUDF-w0rR-G7Bpw')"
+          class="hp-video__item"
+        >
+          <div class="hp-video__img">
+            <img src="images/content/photo-3.png" loading="lazy" alt="" />
+          </div>
+          <p>Jak nejlépe cvičit a zhubnout do plavek?</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div
+          onclick="changeVideo('eAqMXP-9Fxc?si=F2NBQgckymVxuIva')"
+          class="hp-video__item"
+        >
+          <div class="hp-video__img">
+            <img src="images/content/photo-2.png" loading="lazy" alt="" />
+          </div>
+          <p>Rekord na 100m dokázala zdolat česká sportovkyně</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div
+          onclick="changeVideo('FXz8wfvl7B4?si=lrUDF-w0rR-G7Bpw')"
+          class="hp-video__item"
+        >
+          <div class="hp-video__img">
+            <img src="images/content/photo-3.png" loading="lazy" alt="" />
+          </div>
+          <p>Jak nejlépe cvičit a zhubnout do plavek?</p>
+        </div>
+      </div>
+    </div>
+    <div class="videoModal">
+      <div
+        class="modal fade"
+        id="myModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <iframe
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                id="iframeYoutube"
+                src="https://www.youtube.com/embed/e80BbX05D7Y"
+                frameborder="0"
+              ></iframe>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                zavřít
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav aria-label="Další stránky">
+      <ul
+        class="pagination d-flex flex-wrap pagination-flat pagination-success"
+      >
+        <li class="page-item page-item__prev">
+          <a data-abc="true" href="#" class="page-link">
+            {% include "@images/arrow-1.svg" %} Předchozí
+          </a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="#" data-abc="true">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" data-abc="true">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" data-abc="true">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" data-abc="true">...</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" data-abc="true">8</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" data-abc="true">9</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" data-abc="true">10</a>
+        </li>
+        <li class="page-item page-item__next">
+          <a class="page-link" href="#" data-abc="true">
+            Další {% include "@images/arrow-2.svg" %}
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+<script>
+  var currentVideo;
+
+  function changeVideo(vId) {
+    var iframe = document.getElementById("iframeYoutube");
+    iframe.src = "https://www.youtube.com/embed/" + vId + "&mute=1";
+
+    currentVideo = iframe;
+
+    var myModal = new bootstrap.Modal(document.getElementById("myModal"));
+    myModal.show();
+  }
+
+  // Добавляем обработчик события при закрытии модального окна
+  var myModalElement = document.getElementById("myModal");
+  myModalElement.addEventListener("hidden.bs.modal", function () {
+    // Останавливаем воспроизведение видео
+    if (currentVideo) {
+      currentVideo.contentWindow.postMessage(
+        '{"event":"command","func":"stopVideo","args":""}',
+        "*"
+      );
+    }
+  });
+</script>
+
+{% include "@components/partners-section/partners-section.twig" %} {% endblock
+%}
