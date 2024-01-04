@@ -180,13 +180,19 @@
               </div>
             </li>
             <li>
-              <a href="#" target="_blank"> {% include "@images/x.svg" %}</a>
+              <div class="social-share twitter">
+                {% include "@images/x.svg" %}
+              </div>
             </li>
             <li>
-              <a href="#" target="_blank"> {% include "@images/fb-2.svg" %}</a>
+              <div class="social-share facebook">
+                {% include "@images/fb-2.svg" %}
+              </div>
             </li>
             <li>
-              <a href="#" target="_blank"> {% include "@images/in.svg" %}</a>
+              <div class="social-share linkedin">
+                {% include "@images/in.svg" %}
+              </div>
             </li>
           </ul>
         </div>
@@ -194,3 +200,23 @@
     </div>
   </div>
 </section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var copyLinkButton = document.getElementById("copyLink");
+
+    if (copyLinkButton) {
+      copyLinkButton.addEventListener("click", function () {
+        var linkToCopy = this.getAttribute("data-link");
+        var textarea = document.createElement("textarea");
+        textarea.value = linkToCopy;
+        document.body.appendChild(textarea);
+        textarea.select();
+        textarea.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+      });
+    } else {
+      console.error("Element with id 'copyLink' not found.");
+    }
+  });
+</script>
