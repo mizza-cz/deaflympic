@@ -15,9 +15,9 @@
       <div class="col-xl-8 col-md-10 text-center mx-auto">
         <h1 class="mb-6 h1">Název klubu / komise</h1>
         <ul class="club-section__menu">
-          <li>
+          <!-- <li>
             <a href="#calendar">Kalendář akcí</a>
-          </li>
+          </li> -->
           <li>
             <a href="#players">Seznam sportovců </a>
           </li>
@@ -26,14 +26,28 @@
           </li>
         </ul>
       </div>
-      <div class="col-12">
+      <!-- <div class="col-12">
         <div class="article-section__img">
           <img src="images/content/topstory.png" loading="lazy" alt="story" />
         </div>
-      </div>
+      </div> -->
       <div class="col-xl-8 col-md-10 mx-auto">
+        <div class="club-section__inner">
+          <div class="club-section__logo">
+            <img src="images/ico/logo.svg" alt="" />
+          </div>
+          <ul class="club-section__list">
+            <li>
+              <a
+                href="https://mizza-cz.github.io/deaflympic/build/01.0_homepage.html#"
+                >https://mizza-cz.github.io/deaflympi</a
+              >
+            </li>
+            <li>Vodova 1391/35 612 00 Brno 12 Czech Republic</li>
+          </ul>
+        </div>
         <div class="o-content">
-          <h3 id="calendar">Kalendář akcí</h3>
+          <!-- <h3 id="calendar">Kalendář akcí</h3>
           <table>
             <thead>
               <tr>
@@ -101,7 +115,8 @@
                 </td>
               </tr>
             </tbody>
-          </table>
+          </table> -->
+
           <div id="players">
             <h3>Seznam sportovců</h3>
             <table>
@@ -227,6 +242,17 @@
               <a href="#" target="_blank"> {% include "@images/in.svg" %}</a>
             </li>
           </ul>
+        </div>
+      </div>
+      <div class="row g-8 mb-8">
+        <div class="col-lg-4 col-md-6">
+          {% include "@components/post/post.twig" %}
+        </div>
+        <div class="col-lg-4 col-md-6">
+          {% include "@components/post/post.twig" %}
+        </div>
+        <div class="col-lg-4 col-md-6">
+          {% include "@components/post/post.twig" %}
         </div>
       </div>
     </div>

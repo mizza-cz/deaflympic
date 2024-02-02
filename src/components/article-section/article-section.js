@@ -35,4 +35,3 @@ function setShareLinks() {
     socialWindow(url);
   });
 }
-
