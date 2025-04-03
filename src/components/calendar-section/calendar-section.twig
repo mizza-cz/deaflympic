@@ -1,0 +1,360 @@
+<section class="calendar-section">
+  <div class="container">
+    <div class="headerSection">
+      <h1 class="h1">Kalendář akcí</h1>
+    </div>
+    <form class="calendarForm">
+      <div class="calendarForm__row">
+        <div class="calendarForm__item">
+          <div class="date-picker">
+            <div class="input">
+              <div class="result">Od: <span></span></div>
+              <div class="date-picker__btn">
+                <img
+                  src="images/ico/calendar.svg"
+                  width="16"
+                  height="16"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="date-picker__calendar"></div>
+          </div>
+        </div>
+        <div class="calendarForm__item">
+          <div class="date-picker">
+            <div class="input">
+              <div class="result">Do: <span></span></div>
+              <div class="date-picker__btn">
+                <img
+                  src="images/ico/calendar.svg"
+                  width="16"
+                  height="16"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="date-picker__calendar"></div>
+          </div>
+        </div>
+        <div class="calendarForm__item">
+          <select class="js-select" name="" id="">
+            <option value="">Typ akce</option>
+            <option>M-ČR 1.kolo</option>
+            <option>M-ČR</option>
+            <option>M-ČR 2.kolo</option>
+            <option>M-ČR 3.kolo</option>
+            <option>M-ČR FSN 2019/2020 6.kolo</option>
+            <option>ČSNS</option>
+            <option>M-ČR 7.kolo semifinále</option>
+          </select>
+        </div>
+        <div class="calendarForm__item">
+          <select class="js-select" name="" id="">
+            <option value="">Sport</option>
+            <option>lední hokej</option>
+            <option>beachvolejbal</option>
+            <option>basketbal</option>
+            <option>tenis</option>
+            <option>futsal</option>
+            <option>badminton</option>
+            <option>šachy</option>
+            <option>bowling</option>
+          </select>
+        </div>
+      </div>
+      <div class="calendarForm__search">
+        <div class="search">
+          <button>
+            <img src="images/ico/search.svg" alt="" />
+          </button>
+          <input
+            type="text"
+            placeholder="Zadejte název akce nebo místo konání"
+          />
+        </div>
+        <button class="calendarForm__btn">Vyhledat</button>
+      </div>
+    </form>
+    <div class="filtrSection">
+      <ul class="filtrSection__categories">
+        <li>
+          <a href="#" class="active">Vše</a>
+        </li>
+        <li>
+          <a href="">Budoucí</a>
+        </li>
+        <li>
+          <a href="">Následující</a>
+        </li>
+      </ul>
+    </div>
+    <div class="calendar-section__inner">
+      <div class="calendarItem">
+        <div class="calendarItem__date">
+          <div class="calendarItem__name">18.1.2020</div>
+
+          <div class="calendarItem__name">Plzeň</div>
+        </div>
+        <div class="calendarItem__sport">
+          <div class="tag">lední hokej</div>
+        </div>
+        <div class="calendarItem__name">
+          <div class="h5">M-ČR 1.kolo</div>
+          <div class="calendarItem__name">SKN Plzeň - SKN Hradec Králové</div>
+        </div>
+        <div class="calendarItem__links">
+          <a href="#" target="_blank">
+            <img src="images/ico/file.svg" width="32" height="32" alt="" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="images/ico/trophy.svg" width="32" height="32" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="calendarItem">
+        <div class="calendarItem__date">
+          <div class="calendarItem__name">5.4.2025</div>
+
+          <div class="calendarItem__name">Praha - Radotín</div>
+        </div>
+        <div class="calendarItem__sport">
+          <div class="tag">futsal</div>
+        </div>
+        <div class="calendarItem__name">
+          <div class="h5">MČR mládeže</div>
+          <div class="calendarItem__name">20. MČR Futsal - žáci do 16 let</div>
+        </div>
+        <div class="calendarItem__links">
+          <a href="#" target="_blank">
+            <img src="images/ico/file.svg" width="32" height="32" alt="" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="images/ico/trophy.svg" width="32" height="32" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="calendarItem calendarItem--future">
+        <div class="calendarItem__date">
+          <div class="calendarItem__name">30.3.2025</div>
+
+          <div class="calendarItem__name"></div>
+        </div>
+        <div class="calendarItem__sport">
+          <div class="tag">st.tenis</div>
+        </div>
+        <div class="calendarItem__name">
+          <div class="h5">MČR</div>
+          <div class="calendarItem__name">69. ročník jednotlivců a čtyřhry</div>
+        </div>
+        <div class="calendarItem__links">
+          <a href="#" target="_blank">
+            <img src="images/ico/file.svg" width="32" height="32" alt="" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="images/ico/trophy.svg" width="32" height="32" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="calendarItem">
+        <div class="calendarItem__date">
+          <div class="calendarItem__name">12.4.2025</div>
+
+          <div class="calendarItem__name">Praha Prosek</div>
+        </div>
+        <div class="calendarItem__sport">
+          <div class="tag">bowling</div>
+        </div>
+        <div class="calendarItem__name">
+          <div class="h5">BWLN</div>
+          <div class="calendarItem__name">1.kolo MČR týmů</div>
+        </div>
+        <div class="calendarItem__links">
+          <a href="#" target="_blank">
+            <img src="images/ico/file.svg" width="32" height="32" alt="" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="images/ico/trophy.svg" width="32" height="32" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="calendarItem">
+        <div class="calendarItem__date">
+          <div class="calendarItem__name">18.12.2025</div>
+
+          <div class="calendarItem__name">Hradec Králové</div>
+        </div>
+        <div class="calendarItem__sport">
+          <div class="tag">malá kopaná</div>
+        </div>
+        <div class="calendarItem__name">
+          <div class="h5">MČR</div>
+          <div class="calendarItem__name">23. MČR Junioři malé kopané - 1.kolo</div>
+        </div>
+        <div class="calendarItem__links">
+          <a href="#" target="_blank">
+            <img src="images/ico/file.svg" width="32" height="32" alt="" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="images/ico/trophy.svg" width="32" height="32" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="calendarItem calendarItem--future">
+        <div class="calendarItem__date">
+          <div class="calendarItem__name">18.1.2020</div>
+
+          <div class="calendarItem__name">arm.střelnice Lobzy</div>
+        </div>
+        <div class="calendarItem__sport">
+          <div class="tag">sport.střelba</div>
+        </div>
+        <div class="calendarItem__name">
+          <div class="h5">MČR Open</div>
+          <div class="calendarItem__name">MČR OPEN</div>
+        </div>
+        <div class="calendarItem__links">
+          <a href="#" target="_blank">
+            <img src="images/ico/file.svg" width="32" height="32" alt="" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="images/ico/trophy.svg" width="32" height="32" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div class="calendarItem">
+        <div class="calendarItem__date">
+          <div class="calendarItem__name">18.1.2020</div>
+
+          <div class="calendarItem__name">Plzeň</div>
+        </div>
+        <div class="calendarItem__sport">
+          <div class="tag">lední hokej</div>
+        </div>
+        <div class="calendarItem__name">
+          <div class="h5">M-ČR 1.kolo</div>
+          <div class="calendarItem__name">SKN Plzeň - SKN Hradec Králové</div>
+        </div>
+        <div class="calendarItem__links">
+          <a href="#" target="_blank">
+            <img src="images/ico/file.svg" width="32" height="32" alt="" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="images/ico/trophy.svg" width="32" height="32" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="calendarItem calendarItem--future">
+        <div class="calendarItem__date">
+          <div class="calendarItem__name">5.4.2025</div>
+
+          <div class="calendarItem__name">Praha - Radotín</div>
+        </div>
+        <div class="calendarItem__sport">
+          <div class="tag">futsal</div>
+        </div>
+        <div class="calendarItem__name">
+          <div class="h5">MČR mládeže</div>
+          <div class="calendarItem__name">20. MČR Futsal - žáci do 16 let</div>
+        </div>
+        <div class="calendarItem__links">
+          <a href="#" target="_blank">
+            <img src="images/ico/file.svg" width="32" height="32" alt="" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="images/ico/trophy.svg" width="32" height="32" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="calendarItem calendarItem--future">
+        <div class="calendarItem__date">
+          <div class="calendarItem__name">30.3.2025</div>
+
+          <div class="calendarItem__name"></div>
+        </div>
+        <div class="calendarItem__sport">
+          <div class="tag">st.tenis</div>
+        </div>
+        <div class="calendarItem__name">
+          <div class="h5">MČR</div>
+          <div class="calendarItem__name">69. ročník jednotlivců a čtyřhry</div>
+        </div>
+        <div class="calendarItem__links">
+          <a href="#" target="_blank">
+            <img src="images/ico/file.svg" width="32" height="32" alt="" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="images/ico/trophy.svg" width="32" height="32" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="calendarItem">
+        <div class="calendarItem__date">
+          <div class="calendarItem__name">12.4.2025</div>
+
+          <div class="calendarItem__name">Praha Prosek</div>
+        </div>
+        <div class="calendarItem__sport">
+          <div class="tag">bowling</div>
+        </div>
+        <div class="calendarItem__name">
+          <div class="h5">BWLN</div>
+          <div class="calendarItem__name">1.kolo MČR týmů</div>
+        </div>
+        <div class="calendarItem__links">
+          <a href="#" target="_blank">
+            <img src="images/ico/file.svg" width="32" height="32" alt="" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="images/ico/trophy.svg" width="32" height="32" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="calendarItem">
+        <div class="calendarItem__date">
+          <div class="calendarItem__name">18.12.2025</div>
+
+          <div class="calendarItem__name">Hradec Králové</div>
+        </div>
+        <div class="calendarItem__sport">
+          <div class="tag">malá kopaná</div>
+        </div>
+        <div class="calendarItem__name">
+          <div class="h5">MČR</div>
+          <div class="calendarItem__name">23. MČR Junioři malé kopané - 1.kolo</div>
+        </div>
+        <div class="calendarItem__links">
+          <a href="#" target="_blank">
+            <img src="images/ico/file.svg" width="32" height="32" alt="" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="images/ico/trophy.svg" width="32" height="32" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="calendarItem">
+        <div class="calendarItem__date">
+          <div class="calendarItem__name">18.1.2020</div>
+
+          <div class="calendarItem__name">arm.střelnice Lobzy</div>
+        </div>
+        <div class="calendarItem__sport">
+          <div class="tag">sport.střelba</div>
+        </div>
+        <div class="calendarItem__name">
+          <div class="h5">MČR Open</div>
+          <div class="calendarItem__name">MČR OPEN</div>
+        </div>
+        <div class="calendarItem__links">
+          <a href="#" target="_blank">
+            <img src="images/ico/file.svg" width="32" height="32" alt="" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="images/ico/trophy.svg" width="32" height="32" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

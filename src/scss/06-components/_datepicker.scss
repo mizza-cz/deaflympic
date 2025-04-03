@@ -1,0 +1,221 @@
+.date-picker {
+  $height: 50px;
+  $width: 260px;
+  $color-one-light: var(--color-gray-500);
+  $color-one-dark: var(--color-gray-700);
+
+  width: 100%;
+  height: auto;
+  max-height: $height;
+  background: var(--color-light);
+  position: relative;
+  transition: all 0.3s ease-in-out;
+
+  .input {
+    width: 100%;
+    font-size: 0;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    height: 2.75rem;
+    position: relative;
+    max-width: 35rem;
+    box-shadow: 0 0.0625rem 0.125rem 0 #1018280d;
+    border: 0.0625rem solid var(--color-gray-300);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+    .result,
+    .date-picker__btn {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .result {
+      width: calc(100% - #{$height});
+      height: $height;
+      line-height: $height;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 0.0625rem 0.0625rem 0 0.875rem;
+      color: var(--color-gray-900);
+      box-sizing: border-box;
+    }
+
+    .date-picker__btn {
+      width: $height;
+      height: $height;
+      background-color: var(--color-gray-500);
+      color: var(--color-light);
+      line-height: $height;
+      border: 0;
+      font-size: 18px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+      height: 100%;
+      &:hover {
+        background-color: var(--color-gray-700);
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+
+  .date-picker__calendar {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    border-radius: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+  }
+
+  .ui-datepicker-inline {
+    position: relative;
+    width: 100%;
+  }
+
+  .ui-datepicker-header {
+    height: 100%;
+    line-height: 50px;
+    background: $color-one-light;
+    color: var(--color-light);
+    margin-bottom: 10px;
+  }
+
+  .ui-datepicker-prev,
+  .ui-datepicker-next {
+    position: absolute;
+    top: 12px;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+    border: 2px solid var(--color-light);
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 4px;
+      height: 4px;
+      border-left: 2px solid var(--color-light);
+      border-bottom: 2px solid var(--color-light);
+    }
+  }
+
+  .ui-datepicker-prev {
+    left: 12px;
+
+    &:after {
+      transform: rotate(45deg);
+      top: 6px;
+      left: 6px;
+    }
+  }
+
+  .ui-datepicker-next {
+    right: 12px;
+
+    &:after {
+      transform: rotate(-135deg);
+      top: 6px;
+      left: 6px;
+    }
+  }
+
+  .ui-datepicker-header {
+    position: relative;
+    padding: 0 40px;
+    height: 50px;
+    line-height: 50px;
+    background: $color-one-light;
+    color: var(--color-light);
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .ui-datepicker-title {
+    text-align: center;
+  }
+
+  .ui-datepicker-calendar {
+    width: 100%;
+    text-align: center;
+
+    thead {
+      tr {
+        th {
+          span {
+            display: block;
+            width: 100%;
+            color: $color-one-light;
+            margin-bottom: 5px;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  .ui-state-default {
+    display: block;
+    text-decoration: none;
+    color: #b5b5b5;
+    line-height: 40px;
+    font-size: 12px;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.02);
+    }
+  }
+
+  .ui-state-highlight {
+    color: $color-one-dark;
+  }
+
+  .ui-state-active {
+    color: $color-one-dark;
+    background-color: rgba(131, 146, 167, 0.12);
+    font-weight: 600;
+  }
+
+  .ui-datepicker-unselectable {
+    .ui-state-default {
+      color: #eee;
+      border: 2px solid transparent;
+    }
+  }
+
+  &.open {
+    max-height: 400px;
+
+    .input {
+      .date-picker__btn {
+        background: $color-one-dark;
+      }
+    }
+  }
+}
+
+.date-picker.open {
+  .input {
+    border: 1px solid var(--color-gray-900);
+  }
+  .date-picker__calendar {
+    max-height: 400px;
+    height: fit-content;
+    z-index: 999;
+    visibility: visible;
+    opacity: 1;
+  }
+}

@@ -281,6 +281,7 @@
   margin-left: auto;
   margin-right: 8px;
   z-index: 999;
+  cursor: pointer;
   @include media-breakpoint-down(sm) {
     padding: 0.25rem 0;
   }
