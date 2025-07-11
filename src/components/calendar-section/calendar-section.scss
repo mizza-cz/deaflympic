@@ -160,3 +160,18 @@
     }
   }
 }
+
+.calendar-load-more {
+  background-color: var(--color-gray-500);
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-light);
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  padding: 0 16px;
+  transition: all 0.3s;
+  margin: 32px auto;
+}

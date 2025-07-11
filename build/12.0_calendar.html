@@ -343,7 +343,7 @@
 							<img src="images/ico/export.svg" width="32" height="32" alt="" />
 						</a>
 					</div>
-					<div class="calendar-section__inner">
+					<div id="calendar-list" class="calendar-section__inner" role="list">
 						<div class="calendarItem">
 							<div class="calendarItem__date">
 								<div class="calendarItem__name">18.1.2020</div>
@@ -614,6 +614,13 @@
 							</div>
 						</div>
 					</div>
+					<button class="calendar-load-more">načíst další</button>
+					<script>
+						/**
+						 * DEFINE AJAX SOURCE FOR MASONRY REFERENCE
+						 */
+						const newsSource = "/deaflympic/build/_ajax-calendar.json";
+					</script>
 				</div>
 			</section>
 			<section class="partners-section">
